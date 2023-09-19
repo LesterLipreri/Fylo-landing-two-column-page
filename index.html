@@ -11,6 +11,10 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a8d4a42d18.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
   <body>
@@ -24,119 +28,157 @@
             <li><a href="#">Sign In</a></li>
           </ul>
         </nav>
+
+        <div class="flex">
+          <div>
+            <h1>All your files in one secure location, accessible anywhere.</h1>
+            <p>
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <form>
+              <input type="email" placeholder="Enter your email..." />
+              <button>Get Started</button>
+            </form>
+          </div>
+
+          <div>
+            <img src="./images/illustration-1.svg" alt="illustration-1" />
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
-      <div class="container">
-        <section>
-          <h2>All your files in one secure location, accessible anywhere.</h2>
-          <p>
-            Fylo stores your most important files in one secure location. Access
-            them wherever you need, share and collaborate with friends, family,
-            and co-workers.
-          </p>
-          <form class="form">
-            <input type="email" placeholder="Enter your email..." />
-            <button>Get Started</button>
-          </form>
-          <img src="./images/illustration-1.svg" alt="illustration-1" />
-        </section>
+      <section class="soft-pink">
+        <div class="container">
+          <div class="flex">
+            <div>
+              <h2>Stay productive, wherever you are</h2>
+              <p>
+                Never let location be an issue when accessing your files. Fylo
+                has you covered for all of your file storage needs.
+              </p>
 
-        <section>
-          <h2>Stay productive, wherever you are</h2>
-          <p>
-            Never let location be an issue when accessing your files. Fylo has
-            you covered for all of your file storage needs.
-          </p>
+              <p>
+                Securely share files and folders with friends, family and
+                colleagues for live collaboration. No email attachments
+                required!
+              </p>
 
-          <p>
-            Securely share files and folders with friends, family and colleagues
-            for live collaboration. No email attachments required!
-          </p>
+              <a class="fylo-arrow" href="#">
+                See how Fylo works
+                <img src="./images/icon-arrow.svg" alt="icon-arrow" />
+              </a>
 
-          <a href=""
-            >See how Fylo works
-            <img src="./images/icon-arrow.svg" alt="icon-arrow"
-          /></a>
-          <div class="box">
-            <p>
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
-            </p>
-            <div class="box-quote">
-              <img
-                src="./images/avatar-testimonial.jpg"
-                alt="avatar-testimonial"
-              />
-              <strong> Kyle Burton</strong>
-              <span> Founder & CEO, Huddle</span>
+              <div class="testimonial-box">
+                <img id="quote" src="./images/icon-quotes.svg" alt="quotes" />
+                <p>
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+
+                <div class="box-quote">
+                  <div>
+                    <img
+                      class="avatar"
+                      src="./images/avatar-testimonial.jpg"
+                      alt="avatar-testimonial"
+                    />
+                  </div>
+                  <div>
+                    <h4>Kyle Burton</h4>
+                    <small> Founder & CEO, Huddle</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <img src="./images/illustration-2.svg" alt="illustration-2" />
             </div>
           </div>
+        </div>
+      </section>
 
-          <img src="./images/illustration-2.svg" alt="illustration-2" />
-        </section>
+      <section class="gray">
+        <div class="container">
+          <div class="flex">
+            <div class="gray-margin">
+              <h2 id="white">Get early access today</h2>
+              <p>
+                It only takes a minute to sign up and our free starter tier is
+                extremely generous. If you have any questions, our support team
+                would be happy to help you.
+              </p>
+            </div>
 
-        <section class="gray">
-          <h3>Get early access today</h3>
-          <p>
-            It only takes a minute to sign up and our free starter tier is
-            extremely generous. If you have any questions, our support team
-            would be happy to help you.
-          </p>
-          <form class="form">
-            <input type="email" placeholder="email@example.com" />
-            <button>Get Started For Free</button>
-          </form>
-        </section>
-      </div>
+            <div>
+              <form>
+                <input type="email" placeholder="email@example.com" />
+                <button>Get Started For Free</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
       <div class="container">
-        <img src="./images/logo.svg" alt="icon" />
-        <ul>
-          <li>
-            <i></i>
-            Phone: +1-543-123-4567
-          </li>
-          <li>
-            <i></i>
-            example@fylo.com
-          </li>
-        </ul>
+        <div class="logo-footer">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
 
-        <ul>
-          <li>About Us</li>
-          <li>Jobs</li>
-          <li>Press</li>
-          <li>Blog</li>
-        </ul>
+        <div class="flex align-start">
+          <ul class="information">
+            <li class="footer-icons">
+              <figure>
+                <img src="./images/icon-phone.svg" alt="icon-phone" />
+              </figure>
+              <figcaption>Phone: +1-543-123-4567</figcaption>
+            </li>
+            <li class="footer-icons">
+              <figure>
+                <img src="./images/icon-email.svg" alt="icon-email" />
+              </figure>
+              <figcaption>example@fylo.com</figcaption>
+            </li>
+          </ul>
 
-        <ul>
-          <li>Contact Us</li>
-          <li>Terms</li>
-          <li>Privacy</li>
-        </ul>
+          <ul class="medio">
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Press</li>
+            <li>Blog</li>
+          </ul>
 
-        <ul class="social-links">
-          <li>
-            <a href="#">
-              <i></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i></i>
-            </a>
-          </li>
-        </ul>
+          <ul class="medio">
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+
+          <ul class="social-links">
+            <li>
+              <a class="circle" href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a class="circle" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="circle" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
